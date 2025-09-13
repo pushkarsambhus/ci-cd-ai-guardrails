@@ -1,0 +1,3 @@
++ API_KEY='abcdefghijklmnop1234'
+-requests==2.31.0
++requests==2.20.0
