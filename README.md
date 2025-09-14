@@ -12,6 +12,8 @@ Small teams need simple, reliable checks that prevent avoidable incidents (leake
 - **CLI** for local dev / pre-commit
 - **FastAPI** endpoint for CI services
 
+![CI](https://github.com/pushkarsambhus/ci-cd-ai-guardrails/actions/workflows/ci.yml/badge.svg)
+
 ## Quick start (CLI)
 ```bash
 python3 -m venv .venv
