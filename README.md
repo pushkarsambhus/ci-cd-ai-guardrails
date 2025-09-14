@@ -12,6 +12,15 @@ Small teams need simple, reliable checks that prevent avoidable incidents (leake
 - **CLI** for local dev / pre-commit
 - **FastAPI** endpoint for CI services
 
+### Why This Matters
+Secrets leakage, risky dependency changes, and missing tests are frequent causes of production incidents. This project adds early guardrails in the CI/CD process, reducing compliance risks, improving code quality, and cutting down recovery time after failures.
+
+### Trade-offs & Design Choices
+- **Heuristics-first:** Regex + rules provide deterministic, fast checks; LLM explanations are optional and add context when needed.
+- **Lightweight footprint:** CLI + API design keeps it portable; enterprise deployments would need centralized dashboards and distributed scans.
+- **Scope:** Prototyping guardrails; in production, teams would integrate with SAST/DAST, security scanning, and SBOM tools.
+
+
 ![CI](https://github.com/pushkarsambhus/ci-cd-ai-guardrails/actions/workflows/ci.yml/badge.svg)
 
 ## Quick start (CLI)
